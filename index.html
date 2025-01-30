@@ -15,7 +15,7 @@
         nav {background-color: #343a40;position: fixed;width: 100%;top: 0;left: 0;padding: 15px 20px;z-index: 1000;}
         nav a {color: white;margin: 0 20px;text-decoration: none;font-weight: 500;transition: color 0.3s, background-color 0.3s;}
         nav a:hover {color: #f1d8d8;background-color: #555;padding: 5px 10px;border-radius: 5px;}
-        header { background-color: #243547;color: white; padding: 100px 20px; text-align: center;}
+        #main-header { background-color: #243547;color: white; padding: 100px 20px; text-align: center;}
         header h1 { font-size: 2.5rem; margin-bottom: 10px;}
         header p { font-size: 1.2rem;}
         main {margin-top: 50px; padding: 20px;}
@@ -25,7 +25,7 @@
         body {display: flex;flex-direction: column;}
         .bold-heading {font-weight: bold;}
         main {flex-grow: 1;}
-        footer {background-color: #343a40;color: white;padding: 20px 0;text-align: center;}
+        #main-footer {background-color: #343a40;color: white;padding: 20px 0;text-align: center;}
         /* Mobile-responsive tweaks */
         @media (max-width: 768px) {
             header {padding: 150px 20px;}
@@ -45,7 +45,7 @@
         <a href="contact.html">Contact</a>
     </nav>
 
-    <header>
+    <header id="main-header">
         <h1>Welcome to My Personal Website</h1>
         <p>This is the home page. Feel free to navigate through the website to learn more about me.</p>
     </header>
@@ -144,8 +144,9 @@
 
 
     <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 My Website</p>
+
+    <footer id="main-footer">
+        <p>&copy; 2025 My Website. All rights reserved.</p>
     </footer>
 </body>
 

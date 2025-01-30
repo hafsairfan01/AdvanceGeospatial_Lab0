@@ -26,6 +26,24 @@
             nav a {display: inline-block;margin: 10px 0;}
             .section-title {font-size: 1.8rem; }
             .section-content { font-size: 1rem; }}
+.base-list-item {
+    font-size: 1.2rem;
+    color: #333;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.custom-list-item {
+    @extend .base-list-item;
+    font-weight: bold; 
+    color: #6c0a0ad2;  
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
     </style>
 </head>
 <body>
@@ -57,11 +75,12 @@
         
         <h3 style="color: #6c0a0ad2;">Background</h3>
         <p>I have a passion for coding and learning new technologies, with a diverse background in: </p>
+        
         <ul>
-            <li>Master’s in Geomatics Engineering</li>
-            <li>Bachelor's in Software Engineering</li>
-            <li>Experience in database management</li>
-            <li>Proficient in Python, SQL, and more!</li>
+            <li class="custom-list-item">Master’s in Geomatics Engineering</li>
+            <li class="custom-list-item">Bachelor's in Software Engineering</li>
+            <li class="custom-list-item">Experience in database management</li>
+            <li class="custom-list-item">Skilled in Python, SQL, and GIS</li>
         </ul>
     </main>
 
