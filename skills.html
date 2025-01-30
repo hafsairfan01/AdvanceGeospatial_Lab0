@@ -11,18 +11,23 @@
         nav {background-color: #343a40;position: fixed;width: 100%;top: 0;left: 0;padding: 15px 20px;z-index: 1000;}
         nav a {color: white;margin: 0 20px;text-decoration: none;font-weight: 500;transition: color 0.3s, background-color 0.3s;}
         nav a:hover {color: #f1d8d8;background-color: #555;padding: 5px 10px;border-radius: 5px;}
-        h1, h3 {color: #333;}
         table {margin: 30px auto;border-collapse: collapse;width: 80%;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);border-radius: 8px;overflow: hidden;}
         table, th, td {border: 1px solid rgb(13, 12, 12);}
         th, td {padding: 12px;text-align: center;background-color: #fff;}
         th {background-color: #343a40; color: white;}
         tbody tr:hover {background-color: #f1f1f1;}
         ul { text-align: left; display: inline-block; margin: 20px auto; }
-        section { margin: 50px 0; }
+        section { margin: 20px 0; }
         html, body { height: 100%;margin: 0;}
         body {display: flex;flex-direction: column;}
         main {margin-top: 60px;padding-top: 20px;flex-grow: 1;}
         footer {background-color: #343a40;color: white;padding: 20px 0;text-align: center;}
+        @media (max-width: 768px) {
+            header {padding: 10px 20px;}
+            nav { padding: 20px;text-align: center;}
+            nav a {display: inline-block;margin: 10px 0;}
+            .section-title {font-size: 1.8rem; }
+            .section-content { font-size: 1rem; }}
     </style>
 </head>
 <body>
