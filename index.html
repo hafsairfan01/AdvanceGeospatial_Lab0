@@ -7,6 +7,9 @@
     <title>Home</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
     <style>
         body {font-family: Arial, sans-serif;margin: 0;padding: 0;background-color: #f1d8d8;}
         nav {background-color: #343a40;position: fixed;width: 100%;top: 0;left: 0;padding: 15px 20px;z-index: 1000;}
@@ -20,6 +23,7 @@
         .section-content { font-size: 1.1rem; color: #555;}
         html, body { height: 100%;margin: 0;}
         body {display: flex;flex-direction: column;}
+        .bold-heading {font-weight: bold;}
         main {flex-grow: 1;}
         footer {background-color: #343a40;color: white;padding: 20px 0;text-align: center;}
         /* Mobile-responsive tweaks */
@@ -47,12 +51,97 @@
     </header>
 
   
-    <main>
-        <section>
-            <h2 style="color: #7e1313d8; font-weight: bold;">Why this Website?</h2>
-            <p class="section-content">This website showcases my skills, experience, and more!</p>
-        </section>
-    </main>
+  
+
+        <main>
+            <!-- Why this Website Section -->
+            <section>
+              <h2 style="color: #7e1313d8; font-weight: bold;">Why this Website?</h2>
+              <div class="row">
+                <!-- First Column: Why this website -->
+                <div class="col-md-6">
+                  <p class="section-content">This website showcases my skills, experience, and more!</p>
+                </div>
+          
+                <!-- Second Column: Passionate about technology -->
+                <div class="col-md-6">
+                  <p class="section-content">I am passionate about technology and data, and I aim to continuously improve my skills in Software and Geomatics Engineering.</p>
+                </div>
+              </div>
+            </section>
+          
+            <!-- My Interests & Hobbies Section -->
+            <section>
+                <h2 style="color: #7e1313d8; font-weight: bold;">My Interests & Hobbies</h2>
+                <div class="container">
+                  <div class="row">
+                    <!-- First Column: Hobbies -->
+                    <div class="col align-self-start">
+                      <div class="accordion" id="hobbiesAccordion">
+                        <div class="card">
+                          <div class="card-header" id="headingReading">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseReading" aria-expanded="true" aria-controls="collapseReading">
+                                Reading
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseReading" class="collapse show" aria-labelledby="headingReading" data-parent="#hobbiesAccordion">
+                            <div class="card-body">
+                              I love reading books, especially in genres like fiction, fantasy, and personal development. It helps me relax and learn new things.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              
+                    <!-- Second Column: Hobbies -->
+                    <div class="col align-self-center">
+                      <div class="accordion" id="hobbiesAccordion">
+                        <div class="card">
+                          <div class="card-header" id="headingPhotography">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsePhotography" aria-expanded="false" aria-controls="collapsePhotography">
+                                Photography
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapsePhotography" class="collapse" aria-labelledby="headingPhotography" data-parent="#hobbiesAccordion">
+                            <div class="card-body">
+                              Capturing moments through my camera lens is a passion of mine. I enjoy exploring nature and cityscapes to find the perfect shot.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              
+                    <!-- Third Column: Hobbies -->
+                    <div class="col align-self-end">
+                      <div class="accordion" id="hobbiesAccordion">
+                        <div class="card">
+                          <div class="card-header" id="headingTraveling">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTraveling" aria-expanded="false" aria-controls="collapseTraveling">
+                                Traveling
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseTraveling" class="collapse" aria-labelledby="headingTraveling" data-parent="#hobbiesAccordion">
+                            <div class="card-body">
+                              Exploring new places and experiencing different cultures is something I truly enjoy. I aim to visit at least three new countries every year.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
+          </main>
+          
+
+
 
     <!-- Footer Section -->
     <footer>
